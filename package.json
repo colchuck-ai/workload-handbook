@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@engineering/npm-dev-tools": "^2.0.0",
+    "husky": "^9.0.11",
+    "markdownlint-cli2": "^0.12.1",
+    "prettier": "^3.2.5",
+    "remark": "^15.0.0",
+    "remark-cli": "^12.0.0",
+    "remark-lint": "^10.0.0",
+    "remark-lint-no-dead-urls": "^2.0.0",
+    "remark-validate-links": "^13.0.0"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "format": "npm run format:files",
+    "format:files": "prettier --ignore-unknown --write .",
+    "lint": "npm run lint:files && npm run lint:markdown",
+    "lint:files": "prettier --ignore-unknown --check .",
+    "lint:markdown": "remark . --quiet --frail"
+  }
+}

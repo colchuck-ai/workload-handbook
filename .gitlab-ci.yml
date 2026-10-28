@@ -1,0 +1,12 @@
+stages:
+  - test
+
+lint:
+  stage: test
+  image: ${CI_DEPENDENCY_PROXY_DIRECT_GROUP_IMAGE_PREFIX}/node:20
+  before_script:
+    - npm config set -- //${CI_SERVER_HOST}/api/v4/groups/4321/-/packages/npm/:_authToken=${ENGINEERING_DEV_TOOLS_INTERNAL_DEPLOY_PASSWORD}
+    - npm config set @engineering:registry=https://${CI_SERVER_HOST}/api/v4/groups/4321/-/packages/npm/
+    - npm install
+  script:
+    - npm run lint
