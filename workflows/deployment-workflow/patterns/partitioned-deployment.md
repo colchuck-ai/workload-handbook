@@ -16,7 +16,7 @@ This architectural pattern typically leverages the following access patterns:
 
 ## Example: `security-tooling`
 
-`security-tooling` is a workload that provides centralized security monitoring and compliance tools across AWS accounts. It follows the partitioned deployment pattern with a dedicated management project [security-tooling-management](https://gitlab.example.com/engineering/security-tooling/internal/security-tooling-deployment) that provisions S3 buckets for Terraform state, DynamoDB tables for state locking, and IAM roles with least-privilege permissions for each deployment concern.
+`security-tooling` is a workload that provides centralized security monitoring and compliance tools across AWS accounts. It follows the partitioned deployment pattern with a dedicated management project security-tooling-management that provisions S3 buckets for Terraform state, DynamoDB tables for state locking, and IAM roles with least-privilege permissions for each deployment concern.
 
 Each security tool operates as an independent concern - `prowler` for compliance scanning, along with other tools like GuardDuty configurations and Config rules. The management project must be deployed first to establish the foundation, after which concern-specific projects can deploy independently.
 

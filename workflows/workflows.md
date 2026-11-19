@@ -94,4 +94,4 @@ Improperly formatted code or documentation can be difficult to read.
 
 ## CI/CD
 
-Use GitLab CI/CD components published to the [CI/CD catalog](https://gitlab.example.com/explore/catalog) to composed your CI/CD pipelines.
+Use GitLab CI/CD components published to the [CI/CD catalog](https://docs.gitlab.com/ci/components/#cicd-catalog) to composed your CI/CD pipelines.

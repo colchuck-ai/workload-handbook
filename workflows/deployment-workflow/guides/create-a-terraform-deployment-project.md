@@ -10,6 +10,6 @@
 4. Scaffold the code using the [standard deployment structure](../../../tools/terraform/terraform.md#standard-deployment-structure).
 5. [Create workload environments with terraform](../../../workloads/guides/create-a-workload-environment-with-terraform.md) as needed.
 6. Use the following CI/CD components to compose your deployment workflow CI/CD pipeline:
-   - [gitlab-cicd-terraform](https://gitlab.example.com/explore/catalog/engineering/dev-tools/gitlab-cicd-components/gitlab-cicd-terraform) - supports optional `stack` parameter for [independent concern partitioning](../../../tools/terraform/terraform.md#optional-stack-partitioning)
-   - [gitlab-cicd-workflow](https://gitlab.example.com/engineering/dev-tools/internal/gitlab-cicd-workflow) - provides `workflow`, `deploy-if-protected`, `run-if-unprotected`, and `stack-trigger-rules` components
-   - [gitlab-cicd-vault](https://gitlab.example.com/engineering/vault/internal/gitlab-cicd-vault)
+   - [gitlab-cicd-terraform](https://github.com/colchuck-ai/gitlab-cicd-terraform) - supports optional `stack` parameter for [independent concern partitioning](../../../tools/terraform/terraform.md#optional-stack-partitioning)
+   - [gitlab-cicd-workflow](https://github.com/colchuck-ai/gitlab-cicd-workflow) - provides `workflow`, `deploy-if-protected`, `run-if-unprotected`, and `stack-trigger-rules` components
+   - gitlab-cicd-vault

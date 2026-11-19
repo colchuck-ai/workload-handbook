@@ -126,7 +126,7 @@ We've adopted the following best practices for security:
 - [Don't store secrets in state](https://docs.cloud.google.com/docs/terraform/best-practices/security#storing-secrets)
 - [Mark sensitive outputs](https://docs.cloud.google.com/docs/terraform/best-practices/security#sensitive-outputs)
 - [Ensure separation of duties](https://docs.cloud.google.com/docs/terraform/best-practices/security#separation-of-duties)
-  - Create principles that facilitate both read-only and read-write access to state. See the reusable module [tf-aws-tfstate-manager-iam](https://gitlab.example.com/engineering/dev-tools/packages/internal/tf-aws-tfstate-manager-iam) for an example.
+  - Create principles that facilitate both read-only and read-write access to state. See the reusable module [tf-aws-tfstate-manager-iam](https://github.com/colchuck-ai/tf-aws-tfstate-manager-iam) for an example.
 
 ## Standard Structures
 
@@ -361,7 +361,7 @@ When migrating from monolithic to stack-based deployments:
 3. **Gradual Migration** – Move existing resources to appropriate stacks over time
 4. **Legacy Container** – Use a temporary "core" or "legacy" stack for complex migrations
 
-For detailed implementation guidance, see the [gitlab-cicd-terraform stack-based pipeline documentation](https://gitlab.example.com/engineering/dev-tools/internal/gitlab-cicd-terraform/-/blob/master/docs/terraform-stack-based-deployment-pipeline-example.md).
+For detailed implementation guidance, see the [gitlab-cicd-terraform stack-based pipeline documentation](https://github.com/colchuck-ai/gitlab-cicd-terraform/blob/main/docs/terraform-stack-based-deployment-pipeline-example.md).
 
 ### Remote State Structure
 

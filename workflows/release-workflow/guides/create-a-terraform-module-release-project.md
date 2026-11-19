@@ -10,6 +10,6 @@
    - [Automate generation of terraform module documentation](../../../tools/terraform-docs/guides/automate-generation-of-terraform-module-documentation.md)
 4. Scaffold the code using the [standard module structure](../../../tools/terraform/terraform.md#standard-module-structure).
 5. Use the following CI/CD components to compose your release workflow CI/CD pipeline:
-   - [gitlab-cicd-terraform](https://gitlab.example.com/explore/catalog/engineering/dev-tools/gitlab-cicd-components/gitlab-cicd-terraform) - for checking that terraform configuration is valid
-   - [gitlab-cicd-workflow](https://gitlab.example.com/engineering/dev-tools/internal/gitlab-cicd-workflow) - provides `workflow` and `run-if-protected` components
-   - [gitlab-cicd-vault](https://gitlab.example.com/engineering/vault/internal/gitlab-cicd-vault)
+   - [gitlab-cicd-terraform](https://github.com/colchuck-ai/gitlab-cicd-terraform) - for checking that terraform configuration is valid
+   - [gitlab-cicd-workflow](https://github.com/colchuck-ai/gitlab-cicd-workflow) - provides `workflow` and `run-if-protected` components
+   - gitlab-cicd-vault

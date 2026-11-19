@@ -66,6 +66,6 @@ Do not use stacks when:
 
 ## Implementation
 
-Stacks are implemented using a combination of [gitlab-cicd-terraform](https://gitlab.example.com/engineering/dev-tools/internal/gitlab-cicd-terraform) and [gitlab-cicd-workflow](https://gitlab.example.com/engineering/dev-tools/internal/gitlab-cicd-workflow) components (specifically the `stack-trigger-rules` component), allowing fine-grained control over which stacks are deployed in CI/CD pipelines.
+Stacks are implemented using a combination of [gitlab-cicd-terraform](https://github.com/colchuck-ai/gitlab-cicd-terraform) and [gitlab-cicd-workflow](https://github.com/colchuck-ai/gitlab-cicd-workflow) components (specifically the `stack-trigger-rules` component), allowing fine-grained control over which stacks are deployed in CI/CD pipelines.
 
-For a concrete example, visit [asset-inventory-resource-deployment](https://gitlab.example.com/engineering/asset-inventory/internal/asset-inventory-resource-deployment).
+For a concrete example, visit asset-inventory-resource-deployment.

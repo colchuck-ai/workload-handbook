@@ -87,5 +87,5 @@ After identifying a bug, a problematic action someone could take is fix it in th
 
 Use the following CI/CD components to compose your release workflow CI/CD pipeline:
 
-- [gitlab-cicd-workflow](https://gitlab.example.com/engineering/dev-tools/internal/gitlab-cicd-workflow) - provides `workflow` and `run-if-protected` components
-- [gitlab-cicd-vault](https://gitlab.example.com/engineering/vault/internal/gitlab-cicd-vault)
+- [gitlab-cicd-workflow](https://github.com/colchuck-ai/gitlab-cicd-workflow) - provides `workflow` and `run-if-protected` components
+- gitlab-cicd-vault
