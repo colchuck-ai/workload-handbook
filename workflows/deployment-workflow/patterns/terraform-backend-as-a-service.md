@@ -16,7 +16,7 @@ This architectural pattern typically leverages the following access patterns:
 
 ## Example: `tf-backend`
 
-`tf-backend` provides a centralized Terraform backend service that enables engineering teams to manage infrastructure as code without maintaining separate backend infrastructure. The service is implemented through the [tf-backend-deployment](https://gitlab.example.com/engineering/tf-backend/internal/tf-backend-deployment) project and handles Terraform state storage, locking, and IAM permissions in AWS. As an example, the `asset-inventory` engineering workload uses this service via the [asset-inventory-resource-deployment](https://gitlab.example.com/engineering/asset-inventory/internal/asset-inventory-resource-deployment) project to manage resources such as queries, dashboards, and alert rules.
+`tf-backend` provides a centralized Terraform backend service that enables engineering teams to manage infrastructure as code without maintaining separate backend infrastructure. The service is implemented through the tf-backend-deployment project and handles Terraform state storage, locking, and IAM permissions in AWS. As an example, the `asset-inventory` engineering workload uses this service via the asset-inventory-resource-deployment project to manage resources such as queries, dashboards, and alert rules.
 
 ```mermaid
 flowchart LR
